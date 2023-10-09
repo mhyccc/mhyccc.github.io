@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ruoyu - 进一寸有进一寸的欢喜</title><meta name="keywords" content="Java"><meta name="author" content="Evermore"><meta name="copyright" content="Evermore"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="求知若渴, 虚心若愚">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ruoyu">
+<meta property="og:url" content="https://foreverforth.github.io/index.html">
+<meta property="og:site_name" content="ruoyu">
+<meta property="og:description" content="求知若渴, 虚心若愚">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/99473854_p0.webp">
+<meta property="article:author" content="Evermore">
+<meta property="article:tag" content="Java">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/99473854_p0.webp"><link rel="shortcut icon" href="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/103123586_p0 (1).webp"><link rel="canonical" href="https://foreverforth.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":800},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ruoyu',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-10-09 21:11:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/99473854_p0.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> DL之路</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span> 利用Python数据分析</span></a></li><li><a class="site-page child" href="/categories/PyTorch"><span> PyTorch</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span> 操作系统</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span> 数据结构与算法</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Java%E5%9F%BA%E7%A1%80"><span> Java基础</span></a></li><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ruoyu</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> DL之路</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span> 利用Python数据分析</span></a></li><li><a class="site-page child" href="/categories/PyTorch"><span> PyTorch</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span> 操作系统</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span> 数据结构与算法</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Java%E5%9F%BA%E7%A1%80"><span> Java基础</span></a></li><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ruoyu</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch8/" title="利用Python数据分析（八）：数据规整：聚合、合并和重塑">利用Python数据分析（八）：数据规整：聚合、合并和重塑</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.874Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.875Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">在许多应用中，数据可能分散在许多文件或数据库中，存储的形式也不利于分析。本章关注可以聚合、合并、重塑数据的方法。
+首先，我会介绍 pandas 的层次化索引，它广泛用于以上操作。然后，我深入介绍了一些特殊的数据操作。
+层次化索引总结
+多维索引如何创建以及根据索引获取想要的数据?
+重排 和 分级
+swaplevel 重排
+sort_index 分级
+
+
+根据级别汇总
+group_by 再接 求和 sum 等处理函数
+也可以直接用 sum
+
+
+将 DataFrame 的列作为索引
+set_index
+reset_index
+
+
+
+层次化索引（hierarchical indexing）是 pandas 的一项重要功能，它使你能在一个轴上拥有多个（两个以上）索引级别。抽象点说，它使你能以低维度形式处理高维度数据。我们先来看一个简单的例子：创建一个 Series，并用一个由列表或数组组成的列表作为索引：
+12345678910111213141516In [9]: data = pd.Series(np.random.randn(9),   ...:                  inde ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch7/" title="利用Python数据分析（七）：数据清洗与准备">利用Python数据分析（七）：数据清洗与准备</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.873Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.873Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">在数据分析和建模的过程中，相当多的时间要用在数据准备上：加载、清理、转换以及重塑。
+这些工作会占到分析师时间的 80%或更多。有时，存储在文件和数据库中的数据的格式不适合某个特定的任务。许多研究者都选择使用通用编程语言（如 Python、Perl、R 或 Java）或 UNIX 文本处理工具（如 sed 或 awk）对数据格式进行专门处理。幸运的是，pandas 和内置的 Python 标准库提供了一组高级的、灵活的、快速的工具，可以让你轻松地将数据规整为想要的格式。
+在本章中，我会讨论处理缺失数据、重复数据、字符串操作和其它分析数据转换的工具。下一章，我会关注于用多种方法合并、重塑数据集。
+处理缺失数据在许多数据分析工作中，缺失数据是经常发生的。pandas 的目标之一就是尽量轻松地处理缺失数据。例如，pandas 对象的所有描述性统计默认都不包括缺失数据。
+缺失数据在 pandas 中呈现的方式有些不完美，但对于大多数用户可以保证功能正常。对于数值数据，pandas 使用浮点值 NaN（Not a Number）表示缺失数据。我们称其为哨兵值，可以方便的检测出来：
+12345678 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch6/" title="利用Python数据分析（六）：数据加载、存储、文件格式">利用Python数据分析（六）：数据加载、存储、文件格式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.872Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.872Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">访问数据是使用本书所介绍的这些工具的第一步。我会着重介绍 pandas 的数据输入与输出，虽然别的库中也有不少以此为目的的工具。
+输入输出通常可以划分为几个大类：
+
+读取文本文件和其他更高效的磁盘存储格式
+加载数据库中的数据
+利用 Web API 操作网络资源。
+
+读写文本格式的数据pandas 提供了一些用于将表格型数据读取为 DataFrame 对象的函数。其中 read_csv 和 read_table 可能会是你今后用得最多的。
+
+我将大致介绍一下这些函数在将文本数据转换为 DataFrame 时所用到的一些技术。这些函数的选项可以划分为以下几个大类：
+
+索引：将一个或多个列当做返回的 DataFrame 处理，以及是否从文件、用户获取列名。
+类型推断和数据转换：包括用户定义值的转换、和自定义的缺失值标记列表等。
+日期解析：包括组合功能，比如将分散在多个列中的日期时间信息组合成结果中的单个列。
+迭代：支持对大文件进行逐块迭代。
+不规整数据问题：跳过一些行、页脚、注释或其他一些不重要的东西（比如由成千上万个逗号隔开的数值数据）。
+
+首先我们来看一个以逗号分隔的（CSV）文本文件： ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch5/" title="利用Python数据分析（五）：pandas入门">利用Python数据分析（五）：pandas入门</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.869Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.870Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">pandas 是本书后续内容的首选库。它含有使数据清洗和分析工作变得更快更简单的数据结构和操作工具。pandas 经常和其它工具一同使用，如数值计算工具 NumPy 和 SciPy，分析库 statsmodels 和 scikit-learn，和数据可视化库 matplotlib。pandas 是基于 NumPy 数组构建的，特别是基于数组的函数和不使用 for 循环的数据处理。
+虽然 pandas 采用了大量的 NumPy 编码风格，但二者最大的不同是 pandas 是专门为处理表格和混杂数据设计的。而 NumPy 更适合处理统一的数值数组数据。
+自从 2010 年 pandas 开源以来，pandas 逐渐成长为一个非常大的库，应用于许多真实案例。开发者社区已经有了 800 个独立的贡献者，他们在解决日常数据问题的同时为这个项目提供贡献。
+在本书后续部分中，我将使用下面这样的 pandas 引入约定：
+1In [1]: import pandas as pd
+
+因此，只要你在代码中看到 pd.，就得想到这是 pandas。因为 Series 和 DataFrame 用的次数非常多， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch4/" title="利用Python数据分析（四）：NumPy基础：数组和矢量计算">利用Python数据分析（四）：NumPy基础：数组和矢量计算</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.867Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.867Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">NumPy（Numerical Python的简称）是Python数值计算最重要的基础包。大多数提供科学计算的包都是用NumPy的数组作为构建基础。
+NumPy的部分功能如下：
+
+ndarray，一个具有矢量算术运算和复杂广播能力的快速且节省空间的多维数组。
+用于对整组数据进行快速运算的标准数学函数（无需编写循环）。
+用于读写磁盘数据的工具以及用于操作内存映射文件的工具。
+线性代数、随机数生成以及傅里叶变换功能。
+用于集成由C、C++、Fortran等语言编写的代码的A C API。
+
+NumPy本身并没有提供多么高级的数据分析功能，理解NumPy数组以及面向数组的计算将有助于你更加高效地使用诸如pandas之类的工具。
+虽然NumPy提供了通用的数值数据处理的计算基础，但是pandas还提供了一些NumPy所没有的领域特定的功能，如时间序列处理等。
+
+笔记：Python的面向数组计算可以追溯到1995年，Jim Hugunin创建了Numeric库。接下来的10年，许多科学编程社区纷纷开始使用Python的数组编程，但是进入21世纪，库的生态系统变得碎片化了。2005年，Travis ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch3/" title="利用Python数据分析（三）：Python数据结构、函数">利用Python数据分析（三）：Python数据结构、函数</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.865Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.865Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">本章讨论 Python 的内置功能，这些功能本书会用到很多。虽然扩展库，比如 pandas 和 Numpy，使处理大数据集很方便，但它们是和 Python 的内置数据处理工具一同使用的。
+我们会从 Python 最基础的数据结构开始：元组、列表、字典和集合。然后会讨论创建你自己的、可重复使用的 Python 函数。最后，会学习 Python 的文件对象，以及如何与本地硬盘交互。
+数据结构和序列Python 的数据结构简单而强大。通晓它们才能成为熟练的 Python 程序员。
+元组 tuple基本使用元组是一个固定长度，不可改变的 Python 序列对象。创建元组的最简单方式，是用逗号分隔一列值：
+1234In [1]: tup = 4, 5, 6In [2]: tupOut[2]: (4, 5, 6)
+
+当用复杂的表达式定义元组，最好将值放到圆括号内，如下所示：
+1234In [3]: nested_tup = (4, 5, 6), (7, 8)In [4]: nested_tupOut[4]: ((4, 5, 6), (7, 8))
+
+用tuple可以将任意序列或迭代器转换成元组：
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch2/" title="利用Python数据分析（二）：Python基础语法">利用Python数据分析（二）：Python基础语法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.864Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.864Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">本章主要内容是
+
+IPython 的使用
+Jupyter 的使用
+Python 语法基础
+
+
+作者
+
+当我在 2011 年和 2012 年写作本书的第一版时，可用的学习 Python 数据分析的资源很少。这部分上是一个鸡和蛋的问题：我们现在使用的库，比如 pandas、scikit-learn 和 statsmodels，那时相对来说并不成熟。2017 年，数据科学、数据分析和机器学习的资源已经很多，原来通用的科学计算拓展到了计算机科学家、物理学家和其它研究领域的工作人员。学习 Python 和成为软件工程师的优秀书籍也有了。
+因为这本书是专注于 Python 数据处理的，对于一些 Python 的数据结构和库的特性难免不足。因此，本章和第 3 章的内容只够你能学习本书后面的内容。
+在我来看，没有必要为了数据分析而去精通 Python。我鼓励你使用 IPython shell 和 Jupyter 试验示例代码，并学习不同类型、函数和方法的文档。虽然我已尽力让本书内容循序渐进，但读者偶尔仍会碰到没有之前介绍过的内容。
+本书大部分内容关注的是基于表格的分析和处理大规模数据集的数据准备工具。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch1/" title="利用Python数据分析（一）：准备工作">利用Python数据分析（一）：准备工作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.863Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.863Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">本书的内容本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。
+什么样的数据？当书中出现“数据”时，究竟指的是什么呢？主要指的是结构化数据（structured data），这个故意含糊其辞的术语代指了所有通用格式的数据，例如：
+
+表格型数据，其中各列可能是不同的类型（字符串、数值、日期等）。比如保存在关系型数据库中或以制表符&#x2F;逗号为分隔符的文本文件中的那些数据。
+多维数组（矩阵）。
+通过关键列（对于SQL用户而言，就是主键和外键）相互联系的多个表。
+间隔平均或不平均的时间序列。
+
+这绝不是一个完整的列表。大部分数据集都能被转化为更加适合分析和建模的结构化形式，虽然有时这并不是很明显。如果不行的话，也可以将数据集的特征提取为某种结构化形式。例如，一组新闻文章可以被处理为一张词频表，而这张词频表就可以用于情感分析。
+大部分电子 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E9%80%82%E7%94%A8%E4%BA%8E%20Linux%20%E7%9A%84%20Windows%20%E5%AD%90%E7%B3%BB%E7%BB%9F/" title="WSL Windows中的Linux">WSL Windows中的Linux</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.853Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.853Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span></div><div class="content">是什么适用于 Linux 的 Windows 子系统可让开发人员按原样运行 GNU&#x2F;Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生传统虚拟机或双启动设置开销。
+WSL2 是什么WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，它支持适用于 Linux 的 Windows 子系统在 Windows 上运行 ELF64 Linux 二进制文件。 它的主要目标是提高文件系统性能。
+也就是说 WSL2 &#x3D;&#x3D; 适用于 Linux 的 Windows 子系统
+资源微软 WSL 官方文档
+安装 wsl安装条件必须运行 Windows 10 版本 2004 及更高版本（内部版本 19041 及更高版本）或 Windows 11
+安装命令1wsl --install
+
+安装完成后重启电脑
+重启之后运行安装好的Ubuntu，会提示设置用户名和密码
+wsl 的一些命令wsl 命令
+遇到的一些问题wsl –install 安装完成重启电脑 打开 ubuntu 注册错误
+最后是把 wsl 版本设置成 1 然后再打开 u ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux%20ifconfig%20%E4%B8%8D%E6%98%BE%E7%A4%BAip%E5%9C%B0%E5%9D%80/" title="linux终端 ifconfig不显示子网ip">linux终端 ifconfig不显示子网ip</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.851Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.851Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">遇到的问题</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span></div><div class="content">参考文章
+打开 ifcfg-ens33 配置文件1vim /etc/sysconfig/network-scripts/ifcfg-ens33
+
+修改 ONBOOT&#x3D;yes123456789101112131415TYPE=EthernetPROXY_METHOD=noneBROWSER_ONLY=noBOOTPROTO=dhcpDEFROUTE=yesIPV4_FAILURE_FATAL=noIPV6INIT=yesIPV6_AUTOCONF=yesIPV6_DEFROUTE=yesIPV6_FAILURE_FATAL=noIPV6_ADDR_GEN_MODE=stable-privacyNAME=ens33UUID=3f7f48da-0954-4757-9e63-171f8cab8177DEVICE=ens33ONBOOT=yes
+
+重启网络服务1sudo service network restart
+
+
+sudo 表示以最高权限执行命令
+
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/99473854_p0.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Evermore</div><div class="author-info__description">求知若渴, 虚心若愚</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch8/" title="利用Python数据分析（八）：数据规整：聚合、合并和重塑">利用Python数据分析（八）：数据规整：聚合、合并和重塑</a><time datetime="2023-10-09T13:04:08.874Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch7/" title="利用Python数据分析（七）：数据清洗与准备">利用Python数据分析（七）：数据清洗与准备</a><time datetime="2023-10-09T13:04:08.873Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch6/" title="利用Python数据分析（六）：数据加载、存储、文件格式">利用Python数据分析（六）：数据加载、存储、文件格式</a><time datetime="2023-10-09T13:04:08.872Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch5/" title="利用Python数据分析（五）：pandas入门">利用Python数据分析（五）：pandas入门</a><time datetime="2023-10-09T13:04:08.869Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch4/" title="利用Python数据分析（四）：NumPy基础：数组和矢量计算">利用Python数据分析（四）：NumPy基础：数组和矢量计算</a><time datetime="2023-10-09T13:04:08.867Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">19</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">9</span></a></li></ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Evermore</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["求知若渴 虚心若愚","悟已往之不谏，知来者之可追，实迷途其未远，觉今是而昨非","我从此意识到，我甘愿为了我们纯粹的理想，死在异国的海滩上","思考以后再表达，而不是思考之前先站队","幸福感就如同沉积在悲哀之河底下，隐隐发光的金砂"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '求知若渴 虚心若愚'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="你好,从此以后" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
