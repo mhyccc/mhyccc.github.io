@@ -1,15 +1,15 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ruoyu - 进一寸有进一寸的欢喜</title><meta name="keywords" content="Java"><meta name="author" content="Evermore"><meta name="copyright" content="Evermore"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="求知若渴, 虚心若愚">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>mhy的小家</title><meta name="keywords" content="Java"><meta name="author" content="mhy"><meta name="copyright" content="mhy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="求知若渴, 虚心若愚">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ruoyu">
+<meta property="og:title" content="mhy的小家">
 <meta property="og:url" content="https://foreverforth.github.io/page/2/index.html">
-<meta property="og:site_name" content="ruoyu">
+<meta property="og:site_name" content="mhy的小家">
 <meta property="og:description" content="求知若渴, 虚心若愚">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://raw.githubusercontent.com/foreverForth/source/main/img/110328849_p0.png">
-<meta property="article:author" content="Evermore">
+<meta property="og:image" content="https://raw.githubusercontent.com/foreverForth/source/main/img/109258181_p0.png">
+<meta property="article:author" content="mhy">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/foreverForth/source/main/img/110328849_p0.png"><link rel="shortcut icon" href="https://raw.githubusercontent.com/foreverForth/source/main/img/110328849_p0.png"><link rel="canonical" href="https://foreverforth.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://raw.githubusercontent.com/foreverForth/source/main/img/109258181_p0.png"><link rel="shortcut icon" href="https://raw.githubusercontent.com/foreverForth/source/main/img/109258181_p0.png"><link rel="canonical" href="https://foreverforth.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -33,7 +33,7 @@
     day: '天前',
     month: '个月前'
   },
-  copyright: undefined,
+  copyright: {"limitCount":50,"languages":{"author":"作者: mhy","link":"链接: ","source":"来源: mhy的小家","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
   lightbox: 'fancybox',
   Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
   source: {
@@ -46,12 +46,12 @@
   islazyload: false,
   isAnchor: false
 }</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'ruoyu',
+  title: 'mhy的小家',
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2023-10-24 08:31:48'
+  postUpdate: '2023-10-26 23:04:47'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -122,26 +122,11 @@
       }
       const t = saveToLocal.get('theme')
     
-          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-          if (t === undefined) {
-            if (isLightMode) activateLightMode()
-            else if (isDarkMode) activateDarkMode()
-            else if (isNotSpecified || hasNoSupport) {
-              const now = new Date()
-              const hour = now.getHours()
-              const isNight = hour <= 6 || hour >= 18
-              isNight ? activateDarkMode() : activateLightMode()
-            }
-            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-              if (saveToLocal.get('theme') === undefined) {
-                e.matches ? activateDarkMode() : activateLightMode()
-              }
-            })
-          } else if (t === 'light') activateLightMode()
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
           else activateDarkMode()
         
       const asideStatus = saveToLocal.get('aside-status')
@@ -159,180 +144,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/110328849_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> DL之路</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span> 利用Python数据分析</span></a></li><li><a class="site-page child" href="/categories/PyTorch"><span> PyTorch</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/shell"><span> 常用命令</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span> 数据结构与算法</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Java%E5%9F%BA%E7%A1%80"><span> Java基础</span></a></li><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li><li><a class="site-page child" href="/categories/axios"><span> axios</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ruoyu</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> DL之路</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90"><span> 利用Python数据分析</span></a></li><li><a class="site-page child" href="/categories/PyTorch"><span> PyTorch</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/shell"><span> 常用命令</span></a></li><li><a class="site-page child" href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span> 数据结构与算法</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/Java%E5%9F%BA%E7%A1%80"><span> Java基础</span></a></li><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li><li><a class="site-page child" href="/categories/axios"><span> axios</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch1/" title="利用Python数据分析（一）：准备工作">利用Python数据分析（一）：准备工作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.863Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.863Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">利用Python数据分析</a></span></div><div class="content">本书的内容本书讲的是利用Python进行数据控制、处理、整理、分析等方面的具体细节和基本要点。我的目标是介绍Python编程和用于数据处理的库和工具环境，掌握这些，可以让你成为一个数据分析专家。虽然本书的标题是“数据分析”，重点却是Python编程、库，以及用于数据分析的工具。这就是数据分析要用到的Python编程。
-什么样的数据？当书中出现“数据”时，究竟指的是什么呢？主要指的是结构化数据（structured data），这个故意含糊其辞的术语代指了所有通用格式的数据，例如：
-
-表格型数据，其中各列可能是不同的类型（字符串、数值、日期等）。比如保存在关系型数据库中或以制表符&#x2F;逗号为分隔符的文本文件中的那些数据。
-多维数组（矩阵）。
-通过关键列（对于SQL用户而言，就是主键和外键）相互联系的多个表。
-间隔平均或不平均的时间序列。
-
-这绝不是一个完整的列表。大部分数据集都能被转化为更加适合分析和建模的结构化形式，虽然有时这并不是很明显。如果不行的话，也可以将数据集的特征提取为某种结构化形式。例如，一组新闻文章可以被处理为一张词频表，而这张词频表就可以用于情感分析。
-大部分电子 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E9%80%82%E7%94%A8%E4%BA%8E%20Linux%20%E7%9A%84%20Windows%20%E5%AD%90%E7%B3%BB%E7%BB%9F/" title="WSL Windows中的Linux">WSL Windows中的Linux</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.853Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-12T05:09:44.045Z" title="更新于 2023-10-12 13:09:44">2023-10-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/shell/">shell</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span></div><div class="content">是什么适用于 Linux 的 Windows 子系统可让开发人员按原样运行 GNU&#x2F;Linux 环境 - 包括大多数命令行工具、实用工具和应用程序 - 且不会产生传统虚拟机或双启动设置开销。
-WSL2 是什么WSL 2 是适用于 Linux 的 Windows 子系统体系结构的一个新版本，它支持适用于 Linux 的 Windows 子系统在 Windows 上运行 ELF64 Linux 二进制文件。 它的主要目标是提高文件系统性能。
-也就是说 WSL2 &#x3D;&#x3D; 适用于 Linux 的 Windows 子系统
-资源微软 WSL 官方文档
-安装 wsl安装条件必须运行 Windows 10 版本 2004 及更高版本（内部版本 19041 及更高版本）或 Windows 11
-安装命令1wsl --install
-
-安装完成后重启电脑
-重启之后运行安装好的Ubuntu，会提示设置用户名和密码
-wsl 的一些命令wsl 命令
-遇到的一些问题wsl –install 安装完成重启电脑 打开 ubuntu 注册错误
-最后是把 wsl 版本设置成 1 然后再打开 u ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux%20ifconfig%20%E4%B8%8D%E6%98%BE%E7%A4%BAip%E5%9C%B0%E5%9D%80/" title="linux终端 ifconfig不显示子网ip">linux终端 ifconfig不显示子网ip</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.851Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-12T05:09:35.840Z" title="更新于 2023-10-12 13:09:35">2023-10-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/shell/">shell</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Linux/">Linux</a></span></div><div class="content">参考文章
-打开 ifcfg-ens33 配置文件1vim /etc/sysconfig/network-scripts/ifcfg-ens33
-
-修改 ONBOOT&#x3D;yes123456789101112131415TYPE=EthernetPROXY_METHOD=noneBROWSER_ONLY=noBOOTPROTO=dhcpDEFROUTE=yesIPV4_FAILURE_FATAL=noIPV6INIT=yesIPV6_AUTOCONF=yesIPV6_DEFROUTE=yesIPV6_FAILURE_FATAL=noIPV6_ADDR_GEN_MODE=stable-privacyNAME=ens33UUID=3f7f48da-0954-4757-9e63-171f8cab8177DEVICE=ens33ONBOOT=yes
-
-重启网络服务1sudo service network restart
-
-
-sudo 表示以最高权限执行命令
-
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/git%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/" title="git提交">git提交</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.850Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-12T14:05:25.146Z" title="更新于 2023-10-12 22:05:25">2023-10-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/git/">git</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="content">什么是Git
-解决代码的丢失和备份问题
-
-Git 是一个版本控制系统，可以让你跟踪你对文件所做的修改
-
-例如学习一个项目，跟着敲代码，如果全程提交的话，也方便自己复盘
-
-
-与GitHub &#x2F; Gitee 配合使用
-
-
-安装Gitgit安装
-初始配置123456// 1. 查看全部配置git config --list// 2. 配置开发者用户名和邮箱git config --global user.name [username]git config --global user.email [email]
-
-
-
-
-
-如何将本地和GitHub相关联
-根据GitHub官网提示操作即可
-
-
-12345678910111213echo &quot;# test&quot; &gt;&gt; README.mdgit init  // 项目初始化git add README.md git commit -m &quot;first commit&quot;git branch -M maingit remote add origin https://github.com/foreverF ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/%E5%89%8D%E7%AB%AF/uniapp/uniapp%E6%89%93%E5%8C%85apk/" title="uniapp打包apk">uniapp打包apk</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.849Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.849Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/uniapp/">uniapp</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/uni-app/">uni-app</a></span></div><div class="content">打包发行
-在 HBuilderX 工具栏，点击发行，选择原生 app-云端打包，如下图
-
-
-
-选择公共证书 -&gt; 快速安心打包 简单一些
-
-也可以选择自有证书, 不过这样麻烦一些, 需要自己去获取证书
-
-获取证书参考教程
-
-根据获取到的证书 填写信息
-
-
-证书别名: 获取证书过程中会提到
-密码: 自己设置的密码
-
-值得一提的是 cmd 命令框设置密码时候是不显示的，而且光标也不动，但实际上是输入进去了，输完直接回车即可
-
-证书文件: 用 Everything 搜索 test.keyStore 文件 直接复制它的路径 或者复制一份到自己容易找到的路径
-
-最后选择快速安心打包 等待打包完成即可
-
-最后的 apk 文件是在 项目路径&#x2F;unpackage&#x2F;release&#x2F;apk&#x2F;xxx.apk 手机直接安装查看即可
-配置 app 信息
-打开项目下的 manifest.json 配置文件(可视化界面)
-
-
-基础配置
-图标配置
-启动页面
-功能
-定位
-通知
-
-
-
-manifest.json 配置文件参考教程
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Mybatis学习笔记">Mybatis学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.848Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.848Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Mybatis/">Mybatis</a></span></div><div class="content">是什么
-MyBatis 是一款优秀的持久层框架
-它支持自定义 SQL、存储过程以及高级映射。
-MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作。
-MyBatis 可以通过简单的 XML 或注解来配置和映射原始类型、接口和 Java POJO（Plain Old Java Objects，普通老式 Java 对象）为数据库中的记录。
-Mybatis 官方文档
-
-为什么需要 Mybatis
-Mybatis 的作用就是将数据存入数据库中 , 和从数据库中取数据 .
-传统的 jdbc 操作 , 有很多重复代码块 .通过框架可以减少重复代码,提高开发效率 .
-
-Mybatis 第一个程序引入依赖12345678910111213141516171819202122&lt;dependency&gt;    &lt;groupId&gt;junit&lt;/groupId&gt;    &lt;artifactId&gt;junit&lt;/artifactId&gt;    &lt;version&gt;4.12&lt;/version&gt;    &lt;sco ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Spring学习笔记">Spring学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.847Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.847Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Spring/">Spring</a></span></div><div class="content">是什么Spring 是一个轻量级的控制反转(IoC)和面向切面(AOP)的容器（框架）
-为什么用 Spring
-Spring 是一个轻量级的框架 , 非侵入式的 .
-控制反转 IoC , 面向切面 Aop
-对事物的支持 , 对框架的支持
-
-相关资源Spring 中文文档
-狂神说笔记
-拓展Spring Boot 与 Spring Cloud
-
-Spring Boot 是 Spring 的一套快速配置脚手架，可以基于 Spring Boot 快速开发单个微服务;
-Spring Cloud 是基于 Spring Boot 实现的；
-Spring Boot 专注于快速、方便集成的单个微服务个体，Spring Cloud 关注全局的服务治理框架；
-如果你要学习 SpringCloud 必须要学习 SpringBoot。
-
-Spring IOCIOC 的本质
-控制反转 IOC(Inversion of Control)，是一种设计思想，DI(依赖注入)是实现 IOC 的一种方法
-Spring 容器在初始化时先读取配置文件，根据配置文件将对象存入容器中，程序使用时再从 IOC 容器中取出需要的对象。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/SpringMVC%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="SpringMVC基本使用">SpringMVC基本使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.846Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.847Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/SpringMVC/">SpringMVC</a></span></div><div class="content">SpringMVC 初步使用添加依赖1234567891011121314151617181920212223242526272829303132333435363738394041424344&lt;!-- spring-webmvc --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework&lt;/groupId&gt;    &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;    &lt;version&gt;5.3.22&lt;/version&gt;&lt;/dependency&gt;&lt;!-- ServletAPI --&gt;&lt;dependency&gt;    &lt;groupId&gt;javax.servlet&lt;/groupId&gt;    &lt;artifactId&gt;javax.servlet-api&lt;/artifactId&gt;    &lt;version&gt;3.1.0&lt;/version&gt; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/SSM%E6%95%B4%E5%90%88/" title="SSM整合">SSM整合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.846Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.846Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a></span></div><div class="content">连接数据库
-项目结构
-引入依赖123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687&lt;!-- SpringMVC --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework&lt;/groupId&gt;    &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;    &lt;version&gt;5.3.1&lt;/version&gt;&lt;/dependency&gt;&lt;!-- Spring 持久化层所需依赖 --&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework&lt;/groupId&gt;    &lt;a ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/springboot/springboot%E5%9C%A8%E7%BA%BF%E5%8A%9E%E5%85%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="springboot在线办公小程序">springboot在线办公小程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.844Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.844Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/springboot/">springboot</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/springboot/">springboot</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/">小项目</a></span></div><div class="content">
-暂时先停 之后补上
-
-环境数据库
-mysql
-sqlyog
-IDEA
-
-
-MongoDB
-navicat
-
-
-redis
-redis 客户端界面 redisdesktop
-
-
-
-linux 系统
-vmware
-或者 virtualbox
-
-
-xshell
-或者 finalshell
-
-
-linux.iso(光盘文件)
-
-springboot 后台IDEA 创建 springboot 项目
-选择十个需要的依赖
-spring web
-lombok
-mybatis framework
-…..
-
-
-连接 mysql
-用写好的 sql 语句创建好多表
-
-
-利用 mybatisX 插件生成 mapper 文件
-配置 application.yml
-mysql
-redis
-mongoDB
-mybatis
-
-
-启动 redis
-启动 mongoDB
-测试项目能否正常启动
-
-自定义异常类自定义接口返回结果 R 类整合 接口测试工具 Swagger配置后端验证 validation抵御跨站脚本 Xss 攻击整合 Shiro 以及联合 JWT 实现认证Redis 缓存令牌实现令牌刷新精简返回给客户端的异常 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="page-number" href="/page/4/#content-inner">4</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/110328849_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Evermore</div><div class="author-info__description">求知若渴, 虚心若愚</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">31</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/24/%E5%89%8D%E7%AB%AF/axios/axios%20%E8%AE%BE%E7%BD%AE%E4%BA%86%20withCredentials%20=%20true%20%E4%BD%86%E8%BF%98%E6%98%AF%E4%B8%8D%E8%83%BD%E5%B8%A6%E4%B8%8A%20cookie%20%E7%9A%84%E9%97%AE%E9%A2%98/" title="axios 设置了 withCredentials = true 但还是不能带上 cookie 的问题">axios 设置了 withCredentials = true 但还是不能带上 cookie 的问题</a><time datetime="2023-10-24T00:29:01.629Z" title="发表于 2023-10-24 08:29:01">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/" title="查看哪个进程在占用8080端口">查看哪个进程在占用8080端口</a><time datetime="2023-10-12T05:05:20.949Z" title="发表于 2023-10-12 13:05:20">2023-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/ssm%E6%95%B4%E5%90%88-todolist%E6%A1%88%E4%BE%8B/" title="SSM整合-todolist">SSM整合-todolist</a><time datetime="2023-10-09T14:04:28.207Z" title="发表于 2023-10-09 22:04:28">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch8/" title="利用Python数据分析（八）：数据规整：聚合、合并和重塑">利用Python数据分析（八）：数据规整：聚合、合并和重塑</a><time datetime="2023-10-09T13:04:08.874Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%88%A9%E7%94%A8Python%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/ch7/" title="利用Python数据分析（七）：数据清洗与准备">利用Python数据分析（七）：数据清洗与准备</a><time datetime="2023-10-09T13:04:08.873Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">十一月 2022</span><span class="card-archive-list-count">9</span></a></li></ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By Evermore</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/109258181_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/linux"><span> 常用命令</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li><li><a class="site-page child" href="/categories/axios"><span> axios</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">mhy的小家</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> Java</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/ssm"><span> ssm</span></a></li><li><a class="site-page child" href="/categories/springboot"><span> springboot</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 计算机基础</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/linux"><span> 常用命令</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 工具使用</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/git"><span> git</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><span> 前端</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/uniapp"><span> uniapp</span></a></li><li><a class="site-page child" href="/categories/axios"><span> axios</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/SSM%E6%95%B4%E5%90%88/" title="SSM整合">SSM整合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.846Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.846Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/ssm/">ssm</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/Java/">Java</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/springboot/springboot%E5%9C%A8%E7%BA%BF%E5%8A%9E%E5%85%AC%E5%B0%8F%E7%A8%8B%E5%BA%8F/" title="springboot在线办公小程序">springboot在线办公小程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.844Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.844Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/springboot/">springboot</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/springboot/">springboot</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/">小项目</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/springboot/%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%89%8D%E5%90%8E%E7%AB%AF%E4%BA%A4%E4%BA%92%E6%8E%A5%E5%8F%A3/" title="一个简单的前后端交互接口">一个简单的前后端交互接口</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.844Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.845Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/springboot/">springboot</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/springboot/">springboot</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/springboot/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="springboot学习笔记">springboot学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-09T13:04:08.843Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-09T13:04:08.843Z" title="更新于 2023-10-09 21:04:08">2023-10-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/springboot/">springboot</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/springboot/">springboot</a></span></div><div class="content"></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/109258181_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">mhy</div><div class="author-info__description">求知若渴, 虚心若愚</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/24/%E5%89%8D%E7%AB%AF/axios/axios%20%E8%AE%BE%E7%BD%AE%E4%BA%86%20withCredentials%20=%20true%20%E4%BD%86%E8%BF%98%E6%98%AF%E4%B8%8D%E8%83%BD%E5%B8%A6%E4%B8%8A%20cookie%20%E7%9A%84%E9%97%AE%E9%A2%98/" title="axios 设置了 withCredentials = true 但还是不能带上 cookie 的问题">axios 设置了 withCredentials = true 但还是不能带上 cookie 的问题</a><time datetime="2023-10-24T00:29:01.629Z" title="发表于 2023-10-24 08:29:01">2023-10-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/12/linux/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/" title="查看哪个进程在占用8080端口">查看哪个进程在占用8080端口</a><time datetime="2023-10-12T05:05:20.949Z" title="发表于 2023-10-12 13:05:20">2023-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/Java%E5%AD%A6%E4%B9%A0/ssm/ssm%E6%95%B4%E5%90%88-todolist%E6%A1%88%E4%BE%8B/" title="SSM整合-todolist">SSM整合-todolist</a><time datetime="2023-10-09T14:04:28.207Z" title="发表于 2023-10-09 22:04:28">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/linux/%E9%80%82%E7%94%A8%E4%BA%8E%20Linux%20%E7%9A%84%20Windows%20%E5%AD%90%E7%B3%BB%E7%BB%9F/" title="WSL Windows中的Linux">WSL Windows中的Linux</a><time datetime="2023-10-09T13:04:08.853Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/linux/linux%20ifconfig%20%E4%B8%8D%E6%98%BE%E7%A4%BAip%E5%9C%B0%E5%9D%80/" title="linux终端 ifconfig不显示子网ip">linux终端 ifconfig不显示子网ip</a><time datetime="2023-10-09T13:04:08.851Z" title="发表于 2023-10-09 21:04:08">2023-10-09</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">14</span></a></li></ul></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By mhy</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">很高兴认识你</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
@@ -361,7 +173,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/j
 
   }
 }
-window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="你好,从此以后" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="你好,mhy" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',

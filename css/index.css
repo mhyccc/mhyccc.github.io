@@ -1403,7 +1403,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url("https://raw.githubusercontent.com/foreverForth/source/main/img/108440252_p0.png");
+  background: #f5f8f9;
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -6259,14 +6259,6 @@ blockquote.pullquote.right {
 	padding: 0 0 0 30px;
 }
 
-/* 首页名字以及句子 字体调小一点 */
-/* #page-header #site-title {
-	font-size: 2.3em;
-}
-
-#page-header #site-subtitle {
-	font-size: 1.4em;
-} */
 
 /* 字体改变 */
 @font-face {
@@ -6285,9 +6277,30 @@ blockquote.pullquote.right {
 }
 
 #aside-content {
-	width: 26%;
+	width: 20%;
 }
 
+
+/* 调整下文章高度 和字体 */
+#recent-posts > .recent-post-item {
+	height: 9em;
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .article-title {
+	font-size: 1.6em;
+}
+
+
+/* 头像 */
+.avatar-img {
+	width: 155px;
+	height: 170px;
+	border-radius: 30px;
+}
+
+#aside-content .card-widget {
+	padding: 16px 24px;
+}
 .search-dialog {
   position: fixed;
   top: 10%;
