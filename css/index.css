@@ -6224,11 +6224,12 @@ blockquote.pullquote.right {
 
 /* 目录菜单间距 */
 #nav #menus {
-	flex: 3;
+	flex: 18;
 }
 
 .layout {
 	padding: unset;
+	max-width: 1400px;
 }
 
 #aside-content {
@@ -6238,7 +6239,7 @@ blockquote.pullquote.right {
 
 /* 调整下文章高度 和字体 */
 #recent-posts > .recent-post-item {
-	height: 13em;
+	height: 12em;
 }
 
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
@@ -6246,15 +6247,21 @@ blockquote.pullquote.right {
 }
 
 
+/* 顶部导航栏 */
+#nav #blog_name {
+	flex: 5;
+	/*padding-left: 10px;*/
+}
+
 /* 头像 */
 .avatar-img {
-	width: 150px;
-	height: 155px;
-	border-radius: 20px;
+	width: 180px;
+	height: 190px;
+	border-radius: 15px;
 }
 
 #aside-content .card-widget {
-	padding: 30px 25px;
+	padding: 25px 20px;
 }
 
 /* 文章封面大小 */
