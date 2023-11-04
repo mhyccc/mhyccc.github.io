@@ -6012,7 +6012,7 @@ blockquote.pullquote.right {
 
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
 	font-size: 1.4em;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 
