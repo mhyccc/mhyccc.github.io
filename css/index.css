@@ -6042,6 +6042,16 @@ blockquote.pullquote.right {
 	padding: 0 30px;
 	width: 87%;
 }
+
+/* 备案信息 */
+
+#footer-wrap {
+	color: #bbb;
+}
+
+#footer-wrap a {
+	color: #bbb;
+}
 .search-dialog {
   position: fixed;
   top: 10%;
