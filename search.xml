@@ -80,11 +80,11 @@
     
     
     <entry>
-      <title>Linux命令问题</title>
+      <title>终端命令问题</title>
       <link href="/2024/05/23/C%E8%AF%AD%E8%A8%80/Linux%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98/"/>
       <url>/2024/05/23/C%E8%AF%AD%E8%A8%80/Linux%E5%91%BD%E4%BB%A4%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<h3 id="GitHub如何生成SSH-key">GitHub如何生成SSH key</h3><p>首先在本地生成公钥</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure><p>公钥默认生成在用户目录下的 .ssh目录下的 id_ed25519.pub中</p><p>进入Github 进入SSH页面</p><img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/image-20240523213636550.png" alt="image-20240523213636550" style="zoom: 33%;" /><p>复制到key中 生成即可，这样就可以用 git 将本地代码推送到GitHub仓库中了</p><p>Gitee同理</p><p>最后测试SSH连接</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>有时候配置好了还是会出现 连接被拒绝或者找不到仓库的问题，可能有几个原因</p><p>这里把SSH远程连接云服务器错误原因也放在这里了</p><ol><li>缓存问题，将.ssh文件夹下的 known_host known_host_old 删掉 再重试</li><li>bash环境切换问题 别装zsh （仅对于云服务器）</li><li>网络 / 代理问题，把魔法关了重试</li><li>重启 终端 或者 多试几次</li><li>防火墙开了之后，没开放22端口 <code>sudo ufw allow 22/tcp</code></li></ol><p>参考：</p><p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p><p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection</a></p><p><a href="https://m.w3cschool.cn/githubcn/githubcn-mur43ad5.html">https://m.w3cschool.cn/githubcn/githubcn-mur43ad5.html</a></p><h3 id="ubuntu安装vscode">ubuntu安装vscode</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install --classic code</span><br></pre></td></tr></table></figure><p>参考:</p><p><a href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="GitHub如何生成SSH-key">GitHub如何生成SSH key</h3><p>首先在本地生成公钥</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure><p>公钥默认生成在用户目录下的 .ssh目录下的 id_ed25519.pub中</p><p>进入Github 进入SSH页面</p><img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/image-20240523213636550.png" alt="image-20240523213636550" style="zoom: 33%;" /><p>复制到key中 生成即可，这样就可以用 git 将本地代码推送到GitHub仓库中了</p><p>Gitee同理</p><p>最后测试SSH连接</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>有时候配置好了还是会出现 连接被拒绝或者找不到仓库的问题，可能有几个原因</p><p>这里把SSH远程连接云服务器错误原因也放在这里了</p><ol><li>缓存问题，将.ssh文件夹下的 known_host known_host_old 删掉 再重试</li><li>bash环境切换问题 别装zsh （仅对于云服务器）</li><li>网络 / 代理问题，把魔法关了重试</li><li>重启 终端 或者 多试几次</li><li>防火墙开了之后，没开放22端口 <code>sudo ufw allow 22/tcp</code></li></ol><p>参考：</p><p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p><p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection">https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection</a></p><p><a href="https://m.w3cschool.cn/githubcn/githubcn-mur43ad5.html">https://m.w3cschool.cn/githubcn/githubcn-mur43ad5.html</a></p><h3 id="ubuntu安装vscode">ubuntu安装vscode</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install --classic code</span><br></pre></td></tr></table></figure><p>参考:</p><p><a href="https://code.visualstudio.com/docs/setup/linux">https://code.visualstudio.com/docs/setup/linux</a></p><h3 id="hexo-d失败">hexo d失败</h3><ul><li>ssh -T <a href="mailto:git@github.com">git@github.com</a> 测试连接</li><li>删掉 .ssh/known_hosts* 重试</li></ul>]]></content>
       
       
       
@@ -257,25 +257,6 @@
     
     
     <entry>
-      <title>查看哪个进程在占用8080端口</title>
-      <link href="/2023/10/24/linux/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/"/>
-      <url>/2023/10/24/linux/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/</url>
-      
-        <content type="html"><![CDATA[<h2 id="问题">问题</h2><p>启动<code>springboot</code>项目的时候 出现以下错误</p><blockquote><p>Web server failed to start. Port 8080 was already in use.</p></blockquote><h2 id="解决方法">解决方法</h2><h4 id="linux">linux</h4><ol><li>查找正在使用端口 8080 的进程 ID</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -lnp | grep 8080</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line">ps -aef | grep tomcat</span><br></pre></td></tr></table></figure><ol start="2"><li>使用上面结果中的进程 ID 杀死进程</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 process_id</span><br></pre></td></tr></table></figure><h4 id="windows">windows</h4><p>以管理员身份打开终端</p><ol><li>查找进程ID(<code>process_id</code>)</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano | findstr 8080</span><br></pre></td></tr></table></figure><ol start="2"><li>根据进程ID终止进程</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /pid process_id</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/image-20231012125253776.png" alt=""></p><p><a href="https://stackoverflow.com/questions/34253779/tomcat-server-error-port-8080-already-in-use">参考文章</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>axios 种不上 cookie 的问题</title>
       <link href="/2023/10/24/%E5%89%8D%E7%AB%AF/axios/axios-cookie/"/>
       <url>/2023/10/24/%E5%89%8D%E7%AB%AF/axios/axios-cookie/</url>
@@ -287,6 +268,25 @@
         <tags>
             
             <tag> cookie </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>查看哪个进程在占用8080端口</title>
+      <link href="/2023/10/24/linux/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/"/>
+      <url>/2023/10/24/linux/%E6%9F%A5%E7%9C%8B%E5%93%AA%E4%B8%AA%E8%BF%9B%E7%A8%8B%E5%8D%A0%E7%94%A88080%E7%AB%AF%E5%8F%A3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题">问题</h2><p>启动<code>springboot</code>项目的时候 出现以下错误</p><blockquote><p>Web server failed to start. Port 8080 was already in use.</p></blockquote><h2 id="解决方法">解决方法</h2><h4 id="linux">linux</h4><ol><li>查找正在使用端口 8080 的进程 ID</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">netstat -lnp | grep 8080</span><br><span class="line"></span><br><span class="line">or</span><br><span class="line">ps -aef | grep tomcat</span><br></pre></td></tr></table></figure><ol start="2"><li>使用上面结果中的进程 ID 杀死进程</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill -9 process_id</span><br></pre></td></tr></table></figure><h4 id="windows">windows</h4><p>以管理员身份打开终端</p><ol><li>查找进程ID(<code>process_id</code>)</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -ano | findstr 8080</span><br></pre></td></tr></table></figure><ol start="2"><li>根据进程ID终止进程</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">taskkill /F /pid process_id</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/foreverForth/source/main/img/image-20231012125253776.png" alt=""></p><p><a href="https://stackoverflow.com/questions/34253779/tomcat-server-error-port-8080-already-in-use">参考文章</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
             
         </tags>
       
