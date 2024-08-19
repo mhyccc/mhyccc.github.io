@@ -7,7 +7,6 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/99549238_p0.png">
 <meta property="article:published_time" content="2024-06-19T04:22:31.000Z">
-<meta property="article:modified_time" content="2024-08-19T10:46:37.147Z">
 <meta property="article:author" content="soredake">
 <meta property="article:tag" content="嵌入式">
 <meta name="twitter:card" content="summary">
@@ -53,7 +52,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-08-19 18:46:37'
+  postUpdate: '2024-08-19 19:05:39'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -169,7 +168,7 @@
 <p>该项目就是把flash作为启动区域</p>
 <img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/image-20240812114913731.png" alt="image-20240812114913731" style="zoom: 80%;" />
 <p>在启动引导代码中，如果有可以运行的APP固件，就跳转到APP中断向量表的起始地址，并执行复位中断处理函数。这部分代码就是bootloader程序，与APP程序都存储在flash中，所以需要合理分配地址，避免冲突。</p>
-<img src="C:\Users\13798\AppData\Roaming\Typora\typora-user-images\image-20240819172257771.png" alt="image-20240819172257771" style="zoom: 80%;" />
+<img src="https://shaohua-1313651385.cos.ap-guangzhou.myqcloud.com/img/image-20240819172257771.png" alt="image-20240819172257771" style="zoom: 80%;" />
 <h2 id="项目bug点">项目bug点</h2>
 <p>客户端通过HTTP获取服务器中的版本信息和bin文件需要给外部组读的权限</p>
 <p>否则客户端拿不到正确的资源文件。</p>
